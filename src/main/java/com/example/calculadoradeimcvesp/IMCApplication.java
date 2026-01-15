@@ -3,6 +3,7 @@ package com.example.calculadoradeimcvesp;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -22,6 +23,8 @@ public class IMCApplication extends Application {
         cenaCalculo = new Scene(fxmlLoaderTelaCalculo.load());
         palco.setMaximized(true);
         palco.setTitle("Calculadora de IMC");
+        Image imagem = new Image("file:C:\\Users\\cicero\\IdeaProjects\\CalculadoraDeIMCVesp\\src\\main\\resources\\com\\example\\calculadoradeimcvesp\\imagens\\escala-de-peso.png");
+        palco.getIcons().add(imagem);
         palco.setScene(cenaPrincipal);
         palco.show();
     }
